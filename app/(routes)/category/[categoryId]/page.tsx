@@ -14,6 +14,11 @@ interface CategoryPageProps{
 export const revalidate=0;
 
 
+export const metadata={
+    title:"KV-STORE | Categories",
+    description:"Explore the store"
+  }
+
 const CategoryPage :React.FC<CategoryPageProps>=async ({
     params
 }) => {

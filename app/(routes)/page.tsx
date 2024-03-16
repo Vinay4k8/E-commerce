@@ -9,6 +9,11 @@ import React from 'react'
 
 export const revalidate=0
 
+export const metadata={
+  title:"KV-STORE",
+  description:"Explore the store"
+}
+
 const HomePage = async() => {
 
   const billboard=await getBillboard("65e448151b35bb44809e8845");
