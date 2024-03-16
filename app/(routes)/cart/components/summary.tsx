@@ -25,7 +25,7 @@ const Summary = () => {
             toast.error("Something went wrong");
 
         }
-    },[searchParams])
+    },[searchParams,removeAll])
 
 
     const totalPrice=items.reduce((total,item)=>{
@@ -42,7 +42,6 @@ const Summary = () => {
         window.location = url
     }
 
-    useEffect(()=>{},[])
   return (
     <div 
     className='mt-16 rounded-lg bg-gray-50 px-4 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8'
